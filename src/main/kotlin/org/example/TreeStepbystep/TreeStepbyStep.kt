@@ -86,11 +86,11 @@ fun drawBranch(
     gc.strokeLine(x, y, x2, y2)
 
     // Ghi chú tại đầu nhánh
-    gc.fill = Color.DARKBLUE
+    gc.fill = Color.DARKGREEN
     gc.fillText("(${x.toInt()}, ${y.toInt()})", x + 4, y - 4)
 
     // Ghi chú tại cuối nhánh với độ dài
-    gc.fill = Color.FIREBRICK
+    gc.fill = Color.GREEN
     gc.fillText("(${x2.toInt()}, ${y2.toInt()})", x2 + 4, y2 + 4)
     gc.fillText("len: ${"%.1f".format(length)}", x2 + 4, y2 + 16)
 
